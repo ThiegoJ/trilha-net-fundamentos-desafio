@@ -27,6 +27,7 @@ namespace DesafioFundamentos.Models
 
             if (veiculos.Any())
             {
+                ListarVeiculos();
                 Console.WriteLine("Digite a placa do veículo para remover:");
                 string placa = Console.ReadLine();
 
