@@ -38,11 +38,11 @@ namespace DesafioFundamentos.Models
                 if (int.TryParse(Console.ReadLine(), out int horasEstacionado))
                 {
                     // TODO: Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valorTotal                
-                    // *IMPLEMENTE AQUI*
+                    // Implementado!
                     decimal valorTotal = pInicial + (pPorHora * horasEstacionado);
                     Console.WriteLine($"Valor total a ser pago pelo estacionamento: R$ {valorTotal}");
                     // TODO: Remover a placa digitada da lista de veículos
-                    // *IMPLEMENTE AQUI*
+                    // Implementado!
                     veiculos.Remove(placa);
                     Console.WriteLine($"Veículo com placa: {placa} removido com sucesso!");
                 }
@@ -56,8 +56,10 @@ namespace DesafioFundamentos.Models
                 Console.WriteLine("Desculpe, esse veículo não está estacionado aqui. Confira se digitou a placa corretamente");
             }
         }
-
-            // Verifica se o veículo existe
+        else
+        {
+            Console.WriteLine("Não há Veiculos Estacionados");
+        }
 
         }
         public void ListarVeiculos()
